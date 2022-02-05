@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="display.css" type="text/css">
+    <title>PIG GAME</title>
+</head>
+<body>
+    <h1 id="header">PIG GAME</h1>
+    <div class="rules">
+        <h5 style="text-align: center;">GAME RULES</h5>
+        <ul>
+            <li>The game has 2 players, playing in rounds</li>
+            <li>In each turn, a player rolls two dice as many times as (s)he wishes. Each result get added to his ROUND score</li>
+            <li>But, if the player rolls a 1 in any dice, all his Round score gets lost. After that, it's the next player's turn</li>
+            <li>If the player rolls six two times in both the dice then all his/her points are lost and it's his/her turn</li>
+            <li>The player can choose to 'Hold', which means that his ROUND score gets added to his GLOBAL score. After that, it's the next player's turn</li>
+            <li>The first player to reach set winning(or 100) points on GLOBAL score wins the game </li>
+        </ul>
+    </div>
+    <div class='inp'>
+        <span>Change winning score</span>
+        <p><input id="input" type="text" placeholder="Enter winning score"></p>
+    </div>
+    <div class="container">
+        <button class="box1_new">NEW GAME</button>
+        <button class="box2_roll">ROLL DICE</button>
+        <button class="box3_hold">HOLD</button>
+        <div id="point0">.</div>
+        <div id="point1">.</div>
+        <div class="player0">
+            <div><h3>PLAYER 1</h3></div>
+            <div style="font-size:2em;" class="score0">0</div>
+            <div id="win0">WINNER!</div>
+            <div class="local_score">
+                CURRENT
+                <div style="font-size: 2em;" id="current_score0">0</div>
+            </div>
+        </div>
+        <div id="dice">
+            <img class="dice_img" src="0.png" style="height:105%;width:100%;">
+        </div>
+        <div id="dice2">
+            <img class="dice_img2" src="0.png" style="height:105%;width:100%;">
+        </div>
+        <div class="player1">
+            <div><h3>PLAYER 2</h3></div>
+            <div style="font-size:2em;" class="score1">0</div>
+            <div id="win1">WINNER!</div>
+            <div class="local_score" style="left:unset;right:18%;">
+                CURRENT
+                <div style="font-size: 2em;" id="current_score1">0</div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="JSgame.js"></script>
+</html>
